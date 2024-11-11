@@ -22,32 +22,47 @@ export default function ListBannerPage() {
       >
         <SwiperSlide>
           <Image
-            src="/assets/Banner1.png"
+            src="/assets/Sky.png"
             alt="ima"
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "10%",
+            }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/assets/Banner2.png"
+            src="/assets/Sky2.png"
             alt="ima"
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "10%",
+            }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/assets/Banner3.png"
+            src="/assets/Sky3.png"
             alt="ima"
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "10%",
+            }}
           />
         </SwiperSlide>
       </Swiper>

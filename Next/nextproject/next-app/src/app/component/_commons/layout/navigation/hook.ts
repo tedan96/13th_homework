@@ -1,7 +1,8 @@
 "use client";
-import { FETCHUSER } from "@/app/component/queires/queries";
-import { useQuery } from "@apollo/client";
+import { FETCHUSER, LOGOUTUSER } from "@/app/component/queires/queries";
+import { useMutation, useQuery } from "@apollo/client";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export function UseLayout() {
   const router = useRouter();
@@ -13,5 +14,15 @@ export function UseLayout() {
     router.push("../../../../login");
   };
 
+  // 로그아웃
+  // const [isLogout, setIsLogout] = useState(false);
+  // const [logout] = useMutation(LOGOUTUSER);
+  // const onClickLogout = () => {
+  //   logout({
+  //     variables: {
+  //       setIsLogout,
+  //     },
+  //   });
+  // };
   return { onClickMain, data, onClickLogin };
 }

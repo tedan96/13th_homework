@@ -207,9 +207,7 @@ export const UseBoardWrite = (props: IBoardWriteProps) => {
 
   // 사진 등록
   const [uploadfile] = useMutation(UPLOAD_FILE);
-  const [imgUrl, setImgUrl] = useState(
-    props.isEdit ? data?.fetchBoard?.images[0] : ""
-  );
+  const [imgUrl, setImgUrl] = useState([" ", " ", " "]);
   const fileRef = useRef<HTMLInputElement>(null);
 
   const onChangeFile = async (event: ChangeEvent<HTMLInputElement>) => {
@@ -231,7 +229,7 @@ export const UseBoardWrite = (props: IBoardWriteProps) => {
   };
 
   const onClickDelete = () => {
-    setImgUrl("");
+    setImgUrl(["", "", ""]);
   };
   return {
     onChangeInput,

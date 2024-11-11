@@ -7,7 +7,6 @@ import { UseLayout } from "./hook";
 import { Dropdown, MenuProps, Space } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import Link from "next/link";
-
 export default function NavigationPage() {
   const router = useRouter();
   const onClickMain = () => {
@@ -26,6 +25,11 @@ export default function NavigationPage() {
     {
       label: <Link href="/product">상품 등록</Link>,
       key: "1",
+    },
+
+    {
+      label: <Link href="/login">로그아웃</Link>,
+      key: "2",
     },
   ];
   console.log(data?.fetchUserLoggedIn.name);
